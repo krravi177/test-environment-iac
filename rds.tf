@@ -1,0 +1,220 @@
+# # __generated__ by Terraform
+
+# resource "aws_db_subnet_group" "privatesubnetdb" {
+#   name = "privatesubnetdb"
+#   subnet_ids = ["subnet-0da133bc4a4a44802", "subnet-01a1e5313541d8103"]
+# }
+# 
+# 
+# resource "aws_db_instance" "ims-income-s00001-instance-1-us-east-1a" {
+#   allocated_storage                     = 1
+#   allow_major_version_upgrade           = null
+#   apply_immediately                     = null
+#   auto_minor_version_upgrade            = true
+#   availability_zone                     = "us-east-1a"
+#   backup_retention_period               = 7
+#   backup_target                         = "region"
+#   backup_window                         = "05:01-05:31"
+#   ca_cert_identifier                    = "rds-ca-rsa2048-g1"
+#   character_set_name                    = null
+#   copy_tags_to_snapshot                 = false
+#   custom_iam_instance_profile           = null
+#   customer_owned_ip_enabled             = false
+#   db_name                               = "TID00001"
+#   db_subnet_group_name                  = aws_db_subnet_group.privatesubnetdb.name
+#   dedicated_log_volume                  = false
+#   delete_automated_backups              = true
+#   deletion_protection                   = false
+#   domain                                = null
+#   domain_auth_secret_arn                = null
+# #   domain_dns_ips                        = []
+#   domain_fqdn                           = null
+#   domain_iam_role_name                  = null
+#   domain_ou                             = null
+#   enabled_cloudwatch_logs_exports       = []
+#   engine                                = "aurora-postgresql"
+#   engine_lifecycle_support              = "open-source-rds-extended-support-disabled"
+#   engine_version                        = jsonencode(15.4)
+#   final_snapshot_identifier             = null
+#   iam_database_authentication_enabled   = false
+#   identifier                            = "ims-income-s00001-instance-1-us-east-1b"
+#   identifier_prefix                     = null
+#   instance_class                        = "db.serverless"
+#   iops                                  = 0
+# #   kms_key_id                            = "arn:aws:kms:us-east-1:010438495348:key/d046d692-fb5e-42ea-8909-90c047016383"
+#   license_model                         = "postgresql-license"
+#   maintenance_window                    = "mon:06:02-mon:06:32"
+#   manage_master_user_password           = null
+#   master_user_secret_kms_key_id         = null
+#   max_allocated_storage                 = 0
+#   monitoring_interval                   = 60
+# #   monitoring_role_arn                   = "arn:aws:iam::010438495348:role/rds-monitoring-role"
+#   multi_az                              = false
+#   nchar_character_set_name              = null
+#   network_type                          = "IPV4"
+#   option_group_name                     = "default:aurora-postgresql-15"
+#   parameter_group_name                  = "default.aurora-postgresql15"
+#   password                              = "changeme!" # sensitive
+#   performance_insights_enabled          = true
+# #   performance_insights_kms_key_id       = "arn:aws:kms:us-east-1:010438495348:key/d046d692-fb5e-42ea-8909-90c047016383"
+#   performance_insights_retention_period = 7
+#   port                                  = 5432
+#   publicly_accessible                   = false
+#   replica_mode                          = null
+#   replicate_source_db                   = null
+#   skip_final_snapshot                   = true
+#   snapshot_identifier                   = null
+#   storage_encrypted                     = true
+#   storage_throughput                    = 0
+#   storage_type                          = "aurora-iopt1"
+#   tags                                  = {}
+#   tags_all                              = {}
+#   timezone                              = null
+#   upgrade_storage_config                = null
+#   username                              = "IMSIncomeDBMstr"
+#   vpc_security_group_ids                = ["sg-0a73d72299314a38e"]
+# }
+# 
+# # # __generated__ by Terraform
+# resource "aws_db_instance" "ims-income-s00001-instance-1" {
+#   allocated_storage                     = 1
+#   allow_major_version_upgrade           = null
+#   apply_immediately                     = null
+#   auto_minor_version_upgrade            = true
+#   availability_zone                     = "us-east-1a"
+#   backup_retention_period               = 7
+#   backup_target                         = "region"
+#   backup_window                         = "05:01-05:31"
+#   ca_cert_identifier                    = "rds-ca-rsa2048-g1"
+#   character_set_name                    = null
+#   copy_tags_to_snapshot                 = false
+#   custom_iam_instance_profile           = null
+#   customer_owned_ip_enabled             = false
+#   db_name                               = "TID00001"
+#   db_subnet_group_name                  = aws_db_subnet_group.privatesubnetdb.name
+#   dedicated_log_volume                  = false
+#   delete_automated_backups              = true
+#   deletion_protection                   = false
+#   domain                                = null
+#   domain_auth_secret_arn                = null
+# #   domain_dns_ips                        = []
+#   domain_fqdn                           = null
+#   domain_iam_role_name                  = null
+#   domain_ou                             = null
+#   enabled_cloudwatch_logs_exports       = []
+#   engine                                = "aurora-postgresql"
+#   engine_lifecycle_support              = "open-source-rds-extended-support-disabled"
+#   engine_version                        = jsonencode(15.4)
+#   final_snapshot_identifier             = null
+#   iam_database_authentication_enabled   = false
+#   identifier                            = "ims-income-s00001-instance-1"
+#   identifier_prefix                     = null
+#   instance_class                        = "db.serverless"
+#   iops                                  = 0
+# #   kms_key_id                            = "arn:aws:kms:us-east-1:010438495348:key/d046d692-fb5e-42ea-8909-90c047016383"
+#   license_model                         = "postgresql-license"
+#   maintenance_window                    = "thu:09:04-thu:09:34"
+#   manage_master_user_password           = null
+#   master_user_secret_kms_key_id         = null
+#   max_allocated_storage                 = 0
+#   monitoring_interval                   = 60
+# #   monitoring_role_arn                   = "arn:aws:iam::010438495348:role/rds-monitoring-role"
+#   multi_az                              = false
+#   nchar_character_set_name              = null
+#   network_type                          = "IPV4"
+#   option_group_name                     = "default:aurora-postgresql-15"
+#   parameter_group_name                  = "default.aurora-postgresql15"
+#   password                              = "changeme!" # sensitive
+#   performance_insights_enabled          = true
+# #   performance_insights_kms_key_id       = "arn:aws:kms:us-east-1:010438495348:key/d046d692-fb5e-42ea-8909-90c047016383"
+#   performance_insights_retention_period = 7
+#   port                                  = 5432
+#   publicly_accessible                   = false
+#   replica_mode                          = null
+#   replicate_source_db                   = null
+#   skip_final_snapshot                   = true
+#   snapshot_identifier                   = null
+#   storage_encrypted                     = true
+#   storage_throughput                    = 0
+#   storage_type                          = "aurora-iopt1"
+#   tags                                  = {}
+#   tags_all                              = {}
+#   timezone                              = null
+#   upgrade_storage_config                = null
+#   username                              = "IMSIncomeDBMstr"
+#   vpc_security_group_ids                = ["sg-0a73d72299314a38e"]
+# }
+
+
+# # __generated__ by Terraform from "ims-income-s00001"
+# resource "aws_rds_cluster" "ims-income-s00001" {
+#   allocated_storage                     = 1
+#   allow_major_version_upgrade           = null
+#   apply_immediately                     = null
+#   availability_zones                    = ["us-east-1a", "us-east-1b", "us-east-1d"]
+#   backtrack_window                      = 0
+#   backup_retention_period               = 7
+#   ca_certificate_identifier             = null
+#   cluster_identifier                    = "ims-income-s00001"
+#   cluster_identifier_prefix             = null
+# #   cluster_members                       = ["ims-income-s00001-instance-1", "ims-income-s00001-instance-1-us-east-1b"]
+#   copy_tags_to_snapshot                 = true
+#   database_name                         = "TID00001"
+#   db_cluster_instance_class             = null
+#   db_cluster_parameter_group_name       = "default.aurora-postgresql15"
+#   db_instance_parameter_group_name      = null
+#   db_subnet_group_name                  = "privatesubnetdb"
+#   db_system_id                          = null
+#   delete_automated_backups              = true
+#   deletion_protection                   = false
+#   domain                                = null
+#   domain_iam_role_name                  = null
+#   enable_global_write_forwarding        = null
+#   enable_http_endpoint                  = true
+#   enable_local_write_forwarding         = null
+#   enabled_cloudwatch_logs_exports       = []
+#   engine                                = "aurora-postgresql"
+#   engine_lifecycle_support              = "open-source-rds-extended-support-disabled"
+#   engine_mode                           = "provisioned"
+#   engine_version                        = jsonencode(15.4)
+#   final_snapshot_identifier             = null
+#   global_cluster_identifier             = null
+#   iam_database_authentication_enabled   = false
+#   iam_roles                             = []
+#   iops                                  = 0
+#   manage_master_user_password           = null
+#   master_password                       = null # sensitive
+#   master_user_secret_kms_key_id         = null
+#   master_username                       = "IMSIncomeDBMstr"
+#   network_type                          = "IPV4"
+#   performance_insights_enabled          = true
+#   performance_insights_retention_period = 7
+#   port                                  = 5432
+#   preferred_backup_window               = "05:01-05:31"
+#   preferred_maintenance_window          = "tue:06:57-tue:07:27"
+#   replication_source_identifier         = null
+#   skip_final_snapshot                   = true
+#   snapshot_identifier                   = null
+#   source_region                         = null
+#   storage_encrypted                     = true
+#   storage_type                          = "aurora-iopt1"
+#   tags = {
+#     AppName     = "IMS-Income S00001"
+#     Description = "Intelligent Mortgage Solutions Silo"
+#     Environment = "TEST"
+#     Product     = "IMS"
+#     Tenant      = "FMC"
+#   }
+#   tags_all = {
+#     AppName     = "IMS-Income S00001"
+#     Description = "Intelligent Mortgage Solutions Silo"
+#     Environment = "TEST"
+#     Product     = "IMS"
+#     Tenant      = "FMC"
+#   }
+#   vpc_security_group_ids = ["sg-0a73d72299314a38e"]
+#   serverlessv2_scaling_configuration {
+#     max_capacity = 4
+#     min_capacity = 2
+#   }
+# }
